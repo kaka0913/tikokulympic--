@@ -12,4 +12,3 @@ struct EventListView: View {
         Text("イベントリスト")
     }
 }
-
