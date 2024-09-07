@@ -12,6 +12,10 @@
 		22AABD4A2C875AE90086644F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AABD492C875AE90086644F /* Assets.xcassets */; };
 		22AABD4D2C875AE90086644F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AABD4C2C875AE90086644F /* Preview Assets.xcassets */; };
 		22AABD632C8C34DD0086644F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 22AABD622C8C34DD0086644F /* .gitignore */; };
+		22AABD652C8C38CA0086644F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 22AABD642C8C38CA0086644F /* .swiftlint.yml */; };
+		22AABD6E2C8C42490086644F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD6D2C8C42490086644F /* ProfileView.swift */; };
+		22AABD722C8C42730086644F /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD712C8C42730086644F /* EventListView.swift */; };
+		22AABD742C8C428B0086644F /* TikokuRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD732C8C428B0086644F /* TikokuRankingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		22AABD492C875AE90086644F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22AABD4C2C875AE90086644F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22AABD622C8C34DD0086644F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		22AABD642C8C38CA0086644F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		22AABD6D2C8C42490086644F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		22AABD712C8C42730086644F /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		22AABD732C8C428B0086644F /* TikokuRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikokuRankingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +61,15 @@
 		22AABD442C875AE80086644F /* TikokulympicBeta */ = {
 			isa = PBXGroup;
 			children = (
+				22AABD542C8C31A60086644F /* Models */,
 				22AABD612C8C34990086644F /* ViewParts */,
 				22AABD5E2C8C33F10086644F /* Views */,
 				22AABD592C8C32E00086644F /* CommonViewParts */,
 				22AABD582C8C32A80086644F /* Resources */,
 				22AABD562C8C31ED0086644F /* SharedObjects */,
-				22AABD542C8C31A60086644F /* Models */,
 				22AABD4B2C875AE90086644F /* Preview Content */,
 				22AABD622C8C34DD0086644F /* .gitignore */,
+				22AABD642C8C38CA0086644F /* .swiftlint.yml */,
 			);
 			path = TikokulympicBeta;
 			sourceTree = "<group>";
@@ -115,6 +124,9 @@
 		22AABD5E2C8C33F10086644F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				22AABD692C8C3FCE0086644F /* Profile */,
+				22AABD682C8C3F950086644F /* EventList */,
+				22AABD672C8C3F7C0086644F /* TikokuRanking */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,8 +134,56 @@
 		22AABD612C8C34990086644F /* ViewParts */ = {
 			isa = PBXGroup;
 			children = (
+				22AABD6A2C8C40010086644F /* Profile */,
+				22AABD6B2C8C400B0086644F /* EventList */,
+				22AABD6C2C8C40180086644F /* TikokuRanking */,
 			);
 			path = ViewParts;
+			sourceTree = "<group>";
+		};
+		22AABD672C8C3F7C0086644F /* TikokuRanking */ = {
+			isa = PBXGroup;
+			children = (
+				22AABD732C8C428B0086644F /* TikokuRankingView.swift */,
+			);
+			path = TikokuRanking;
+			sourceTree = "<group>";
+		};
+		22AABD682C8C3F950086644F /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				22AABD712C8C42730086644F /* EventListView.swift */,
+			);
+			path = EventList;
+			sourceTree = "<group>";
+		};
+		22AABD692C8C3FCE0086644F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				22AABD6D2C8C42490086644F /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		22AABD6A2C8C40010086644F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		22AABD6B2C8C400B0086644F /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventList;
+			sourceTree = "<group>";
+		};
+		22AABD6C2C8C40180086644F /* TikokuRanking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TikokuRanking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +196,7 @@
 				22AABD3E2C875AE80086644F /* Sources */,
 				22AABD3F2C875AE80086644F /* Frameworks */,
 				22AABD402C875AE80086644F /* Resources */,
+				22AABD662C8C39620086644F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -184,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AABD652C8C38CA0086644F /* .swiftlint.yml in Resources */,
 				22AABD4D2C875AE90086644F /* Preview Assets.xcassets in Resources */,
 				22AABD632C8C34DD0086644F /* .gitignore in Resources */,
 				22AABD4A2C875AE90086644F /* Assets.xcassets in Resources */,
@@ -192,13 +254,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22AABD662C8C39620086644F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --config .swiftlint.yml \nelse\necho \"warning: SwiftLint not installed.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22AABD3E2C875AE80086644F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				22AABD482C875AE80086644F /* ContentView.swift in Sources */,
+				22AABD6E2C8C42490086644F /* ProfileView.swift in Sources */,
+				22AABD742C8C428B0086644F /* TikokuRankingView.swift in Sources */,
 				22AABD462C875AE80086644F /* TikokulympicBetaApp.swift in Sources */,
+				22AABD722C8C42730086644F /* EventListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
