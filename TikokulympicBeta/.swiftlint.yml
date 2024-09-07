@@ -1,0 +1,36 @@
+# Lint 対象を指定
+included:
+    - TikokulympicBeta/
+# Lint 対象から除外する
+excluded:
+# 無効にするルール
+disabled_rules:
+    - file_length
+    - trailing_comma
+    - trailing_whitespace
+    - trailing_newline
+    - vertical_whitespace
+    - function_body_length
+    - type_body_length
+    - line_length
+    - vertical_parameter_alignment
+
+# 追加するルール
+opt_in_rules:
+    - empty_count
+    - force_unwrapping
+    - redundant_nil_coalescing
+    - toggle_bool
+    - unused_import
+    - unused_declaration
+
+# ルールのカスタマイズ
+force_cast: warning
+force_try: warning
+function_parameter_count:
+    warning: 5
+
+# 変数などの名前の最低の長さを指定。これより短いと違反となる
+# 1 にしておくと、このルールが実質無効となる
+identifier_name:
+    min_length: 1
