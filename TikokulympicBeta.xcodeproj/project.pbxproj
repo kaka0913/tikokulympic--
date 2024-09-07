@@ -11,6 +11,7 @@
 		22AABD482C875AE80086644F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD472C875AE80086644F /* ContentView.swift */; };
 		22AABD4A2C875AE90086644F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AABD492C875AE90086644F /* Assets.xcassets */; };
 		22AABD4D2C875AE90086644F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AABD4C2C875AE90086644F /* Preview Assets.xcassets */; };
+		22AABD632C8C34DD0086644F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 22AABD622C8C34DD0086644F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		22AABD472C875AE80086644F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22AABD492C875AE90086644F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22AABD4C2C875AE90086644F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22AABD622C8C34DD0086644F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +53,14 @@
 		22AABD442C875AE80086644F /* TikokulympicBeta */ = {
 			isa = PBXGroup;
 			children = (
-				22AABD452C875AE80086644F /* TikokulympicBetaApp.swift */,
-				22AABD472C875AE80086644F /* ContentView.swift */,
-				22AABD492C875AE90086644F /* Assets.xcassets */,
+				22AABD612C8C34990086644F /* ViewParts */,
+				22AABD5E2C8C33F10086644F /* Views */,
+				22AABD592C8C32E00086644F /* CommonViewParts */,
+				22AABD582C8C32A80086644F /* Resources */,
+				22AABD562C8C31ED0086644F /* SharedObjects */,
+				22AABD542C8C31A60086644F /* Models */,
 				22AABD4B2C875AE90086644F /* Preview Content */,
+				22AABD622C8C34DD0086644F /* .gitignore */,
 			);
 			path = TikokulympicBeta;
 			sourceTree = "<group>";
@@ -65,6 +71,59 @@
 				22AABD4C2C875AE90086644F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22AABD542C8C31A60086644F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22AABD572C8C328D0086644F /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22AABD562C8C31ED0086644F /* SharedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				22AABD452C875AE80086644F /* TikokulympicBetaApp.swift */,
+				22AABD472C875AE80086644F /* ContentView.swift */,
+			);
+			path = SharedObjects;
+			sourceTree = "<group>";
+		};
+		22AABD572C8C328D0086644F /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		22AABD582C8C32A80086644F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22AABD492C875AE90086644F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22AABD592C8C32E00086644F /* CommonViewParts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonViewParts;
+			sourceTree = "<group>";
+		};
+		22AABD5E2C8C33F10086644F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22AABD612C8C34990086644F /* ViewParts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewParts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AABD4D2C875AE90086644F /* Preview Assets.xcassets in Resources */,
+				22AABD632C8C34DD0086644F /* .gitignore in Resources */,
 				22AABD4A2C875AE90086644F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
