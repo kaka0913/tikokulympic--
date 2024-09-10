@@ -10,6 +10,7 @@ import GoogleSignIn
 import GoogleSignInSwift
 import Supabase
 
+//AuthViewModelはAuthViewのみに対して使用したいため、ViewModelを作成
 class AuthViewModel: ObservableObject {
     @Published var isSignedIn: Bool = false
 
