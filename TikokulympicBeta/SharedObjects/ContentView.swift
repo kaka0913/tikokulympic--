@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         TabView {
             TikokuRankingView()
@@ -28,6 +29,7 @@ struct ContentView: View {
                     Text("プロフィール")
                 }
         }
+        //AuthView()
     }
 }
 
