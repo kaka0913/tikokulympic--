@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APIKeys</key>
+	<dict>
+		<key>SUPABASE_API_KEY</key>
+		<string>$(SUPABASE_API_KEY)</string>
+		<key>SUPABASE_URL</key>
+		<string>https://mgutinpjdbjyjwpxxlxc.supabase.co</string>
+	</dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.979114525545-g95lagpg83b83bkv7rgel366nb588i92</string>
+			</array>
+		</dict>
+	</array>
+	<key>GIDClientID</key>
+	<string>979114525545-g95lagpg83b83bkv7rgel366nb588i92.apps.googleusercontent.com</string>
+</dict>
+</plist>
