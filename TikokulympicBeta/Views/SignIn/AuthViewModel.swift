@@ -41,7 +41,7 @@ class AuthViewModel: ObservableObject {
 
         Task {
             do {
-                let session = try await client.auth.signInWithIdToken(
+                _ = try await client.auth.signInWithIdToken(
                     credentials: .init(
                         provider: .google,
                         idToken: idToken

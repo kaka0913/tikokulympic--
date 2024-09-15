@@ -7,7 +7,7 @@
 		<key>SUPABASE_API_KEY</key>
 		<string>$(SUPABASE_API_KEY)</string>
 		<key>SUPABASE_URL</key>
-		<string>https://mgutinpjdbjyjwpxxlxc.supabase.co</string>
+		<string>https://vhnxcsdghobuddjpukpv.supabase.co</string>
 	</dict>
 	<key>CFBundleURLTypes</key>
 	<array>
