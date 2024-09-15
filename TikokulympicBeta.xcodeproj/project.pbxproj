@@ -378,6 +378,7 @@
 				22E708EE2C8D80030009FE19 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 				22E709112C8F54BA0009FE19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				22E709362C8FF5140009FE19 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				22220BC92C96C49200DDB003 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 22AABD432C875AE80086644F /* Products */;
 			projectDirPath = "";
@@ -652,6 +653,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		22220BC92C96C49200DDB003 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 		22E708EE2C8D80030009FE19 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase/supabase-swift.git";
