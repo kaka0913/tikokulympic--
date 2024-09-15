@@ -17,52 +17,32 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
         didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         FirebaseApp.configure()
-
         Messaging.messaging().delegate = self
-
-        UNUserNotificationCenter.current().delegate = self
-
-        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-
-        application.registerForRemoteNotifications()
-        
         // 通知の許可をリクエスト
-        UNUserNotificationCenter.current().requestAuthorization(
-            options: authOptions
-        ) { granted, error in
-            // 許可が得られたか、エラーが発生したかを処理
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             if let error = error {
-                print("通知の許可リクエストでエラー: \(error.localizedDescription)")
-            } else if granted {
-                print("通知が許可されました")
+                print("通知の許可リクエストでエラーが発生しました: \(error)")
+                return
+            }
+            if granted {
+                DispatchQueue.main.async {
+                    print("通知の許可が得られました")
+                    UIApplication.shared.registerForRemoteNotifications()
+                    print("UIApplication.shared.registerForRemoteNotifications()が呼ばれました")
+                }
             } else {
-                print("通知が拒否されました")
+                print("通知の許可が得られませんでした")
             }
         }
-
-        Messaging.messaging().token { token, error in
-            if let error {
-                print("Error fetching FCM registration token: \(error)")
-            } else if let token {
-                print("FCM registration token: \(token)")
-            }
-        }
+        UNUserNotificationCenter.current().delegate = self
 
         return true
     }
 
-    func application(_: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Failed to register for remote notifications with error \(error)")
     }
 
-    //TODOいずれ消す
-    func application(_: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        var readableToken = ""
-        for index in 0 ..< deviceToken.count {
-            readableToken += String(format: "%02.2hhx", deviceToken[index] as CVarArg)
-        }
-        print("Received an APNs device token: \(readableToken)")
-    }
 }
 
 extension AppDelegate: MessagingDelegate {
