@@ -41,15 +41,16 @@ class AuthViewModel: ObservableObject {
 
         Task {
             do {
-                let session = try await client.auth.signInWithIdToken(
+                _ = try await client.auth.signInWithIdToken(
                     credentials: .init(
                         provider: .google,
                         idToken: idToken
                     )
                 )
-                self.isSignedIn = true
-                print("Supabase Sign-in Success")
-                
+                await MainActor.run {
+                    self.isSignedIn = true
+                    print("Supabase Sign-in Success")
+                }
             } catch {
                 print("Supabase Sign-in Error: \(error.localizedDescription)")
             }
@@ -66,8 +67,10 @@ class AuthViewModel: ObservableObject {
         
         do {
             try await client.auth.signOut()
-            isSignedIn = false
-            print("Signed out of both Google and Supabase")
+            await MainActor.run {
+                self.isSignedIn = false
+                print("Signed out of both Google and Supabase")
+            }
         } catch {
             print("Error signing out of Supabase: \(error.localizedDescription)")
         }

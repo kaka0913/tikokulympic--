@@ -20,6 +20,6 @@ class SupabaseClientManager {
         }
 
         client = SupabaseClient(supabaseURL: URL(string: supabaseURL)!, supabaseKey: supabaseApiKey)
-        debugPrint("SupabaseClient initialized: \(client!)")
+        debugPrint("SupabaseClient initialized")
     }
 }
