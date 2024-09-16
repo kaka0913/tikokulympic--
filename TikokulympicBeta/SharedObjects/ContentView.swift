@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            TikokuRankingView()
+            Ranking()
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("ランキング")

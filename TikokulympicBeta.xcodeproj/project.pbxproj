@@ -17,7 +17,6 @@
 		22AABD722C8C42730086644F /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD712C8C42730086644F /* EventListView.swift */; };
 		22AABD742C8C428B0086644F /* TikokuRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD732C8C428B0086644F /* TikokuRankingView.swift */; };
 		22E708E82C8D66EF0009FE19 /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E708E72C8D66EF0009FE19 /* APIKeyManager.swift */; };
-		22E708EA2C8D684C0009FE19 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 22E708E92C8D684C0009FE19 /* Config.xcconfig */; };
 		22E708F02C8D80030009FE19 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 22E708EF2C8D80030009FE19 /* Auth */; };
 		22E708F22C8D80030009FE19 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 22E708F12C8D80030009FE19 /* Functions */; };
 		22E708F42C8D80030009FE19 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 22E708F32C8D80030009FE19 /* PostgREST */; };
@@ -51,13 +50,14 @@
 		22E7092F2C8F55600009FE19 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 22E7092E2C8F55600009FE19 /* FirebasePerformance */; };
 		22E709312C8F55600009FE19 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 22E709302C8F55600009FE19 /* FirebaseRemoteConfig */; };
 		22E709332C8F55600009FE19 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 22E709322C8F55600009FE19 /* FirebaseStorage */; };
-		22E709352C8F5AA80009FE19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22E709342C8F5AA80009FE19 /* GoogleService-Info.plist */; };
 		22E709382C8FF8910009FE19 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 22E709372C8FF8910009FE19 /* GoogleSignIn */; };
 		22E7093A2C8FF8910009FE19 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22E709392C8FF8910009FE19 /* GoogleSignInSwift */; };
 		22E7093F2C90054C0009FE19 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7093E2C90054C0009FE19 /* AuthViewModel.swift */; };
 		22E709412C904AF50009FE19 /* SupabaseClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E709402C904AF50009FE19 /* SupabaseClientManager.swift */; };
 		22E709432C904C220009FE19 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E709422C904C220009FE19 /* AuthView.swift */; };
-		A55689812C97ED2E00E60BC6 /* ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55689802C97ED2E00E60BC6 /* ranking.swift */; };
+		A55689852C97F3FE00E60BC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A55689842C97F3FE00E60BC6 /* GoogleService-Info.plist */; };
+		A556898B2C97F58200E60BC6 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556898A2C97F58200E60BC6 /* Ranking.swift */; };
+		A556898D2C97FBB300E60BC6 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A556898C2C97FBB300E60BC6 /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,13 +72,13 @@
 		22AABD712C8C42730086644F /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		22AABD732C8C428B0086644F /* TikokuRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikokuRankingView.swift; sourceTree = "<group>"; };
 		22E708E72C8D66EF0009FE19 /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
-		22E708E92C8D684C0009FE19 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		22E708EB2C8D6ABA0009FE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		22E709342C8F5AA80009FE19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "TikokulympicBeta/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		22E7093E2C90054C0009FE19 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		22E709402C904AF50009FE19 /* SupabaseClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClientManager.swift; sourceTree = "<group>"; };
 		22E709422C904C220009FE19 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		A55689802C97ED2E00E60BC6 /* ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ranking.swift; sourceTree = SOURCE_ROOT; };
+		A55689842C97F3FE00E60BC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A556898A2C97F58200E60BC6 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
+		A556898C2C97FBB300E60BC6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,17 +147,15 @@
 			isa = PBXGroup;
 			children = (
 				22E708E62C8D66C10009FE19 /* Services */,
-				22AABD542C8C31A60086644F /* Models */,
-				22AABD612C8C34990086644F /* ViewParts */,
+				A55689872C97F4A200E60BC6 /* ViewParts */,
 				22AABD5E2C8C33F10086644F /* Views */,
-				22AABD592C8C32E00086644F /* CommonViewParts */,
 				22AABD582C8C32A80086644F /* Resources */,
 				22AABD562C8C31ED0086644F /* SharedObjects */,
 				22AABD4B2C875AE90086644F /* Preview Content */,
 				22AABD622C8C34DD0086644F /* .gitignore */,
 				22AABD642C8C38CA0086644F /* .swiftlint.yml */,
 				22E708EB2C8D6ABA0009FE19 /* Info.plist */,
-				22E708E92C8D684C0009FE19 /* Config.xcconfig */,
+				A556898C2C97FBB300E60BC6 /* Config.xcconfig */,
 			);
 			path = TikokulympicBeta;
 			sourceTree = "<group>";
@@ -165,18 +163,10 @@
 		22AABD4B2C875AE90086644F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				22E709342C8F5AA80009FE19 /* GoogleService-Info.plist */,
+				A55689842C97F3FE00E60BC6 /* GoogleService-Info.plist */,
 				22AABD4C2C875AE90086644F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		22AABD542C8C31A60086644F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				22AABD572C8C328D0086644F /* API */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		22AABD562C8C31ED0086644F /* SharedObjects */ = {
@@ -188,26 +178,12 @@
 			path = SharedObjects;
 			sourceTree = "<group>";
 		};
-		22AABD572C8C328D0086644F /* API */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		22AABD582C8C32A80086644F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				22AABD492C875AE90086644F /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		22AABD592C8C32E00086644F /* CommonViewParts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonViewParts;
 			sourceTree = "<group>";
 		};
 		22AABD5E2C8C33F10086644F /* Views */ = {
@@ -219,16 +195,6 @@
 				22AABD672C8C3F7C0086644F /* TikokuRanking */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		22AABD612C8C34990086644F /* ViewParts */ = {
-			isa = PBXGroup;
-			children = (
-				22AABD6A2C8C40010086644F /* Profile */,
-				22AABD6B2C8C400B0086644F /* EventList */,
-				22AABD6C2C8C40180086644F /* TikokuRanking */,
-			);
-			path = ViewParts;
 			sourceTree = "<group>";
 		};
 		22AABD672C8C3F7C0086644F /* TikokuRanking */ = {
@@ -255,28 +221,6 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		22AABD6A2C8C40010086644F /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		22AABD6B2C8C400B0086644F /* EventList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EventList;
-			sourceTree = "<group>";
-		};
-		22AABD6C2C8C40180086644F /* TikokuRanking */ = {
-			isa = PBXGroup;
-			children = (
-				A55689802C97ED2E00E60BC6 /* ranking.swift */,
-			);
-			path = TikokuRanking;
-			sourceTree = "<group>";
-		};
 		22E708E62C8D66C10009FE19 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +237,23 @@
 				22E709422C904C220009FE19 /* AuthView.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		A55689872C97F4A200E60BC6 /* ViewParts */ = {
+			isa = PBXGroup;
+			children = (
+				A55689882C97F4C200E60BC6 /* TikokuRanking */,
+			);
+			name = ViewParts;
+			path = ViewParts/ViewParts;
+			sourceTree = "<group>";
+		};
+		A55689882C97F4C200E60BC6 /* TikokuRanking */ = {
+			isa = PBXGroup;
+			children = (
+				A556898A2C97F58200E60BC6 /* Ranking.swift */,
+			);
+			path = TikokuRanking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,11 +358,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AABD652C8C38CA0086644F /* .swiftlint.yml in Resources */,
-				22E708EA2C8D684C0009FE19 /* Config.xcconfig in Resources */,
 				22AABD4D2C875AE90086644F /* Preview Assets.xcassets in Resources */,
 				22AABD632C8C34DD0086644F /* .gitignore in Resources */,
 				22AABD4A2C875AE90086644F /* Assets.xcassets in Resources */,
-				22E709352C8F5AA80009FE19 /* GoogleService-Info.plist in Resources */,
+				A556898D2C97FBB300E60BC6 /* Config.xcconfig in Resources */,
+				A55689852C97F3FE00E60BC6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +394,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A55689812C97ED2E00E60BC6 /* ranking.swift in Sources */,
 				22E708E82C8D66EF0009FE19 /* APIKeyManager.swift in Sources */,
 				22AABD482C875AE80086644F /* ContentView.swift in Sources */,
 				22AABD6E2C8C42490086644F /* ProfileView.swift in Sources */,
+				A556898B2C97F58200E60BC6 /* Ranking.swift in Sources */,
 				22AABD742C8C428B0086644F /* TikokuRankingView.swift in Sources */,
 				22E7093F2C90054C0009FE19 /* AuthViewModel.swift in Sources */,
 				22AABD462C875AE80086644F /* TikokulympicBetaApp.swift in Sources */,
@@ -451,7 +412,6 @@
 /* Begin XCBuildConfiguration section */
 		22AABD4E2C875AE90086644F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E708E92C8D684C0009FE19 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -515,7 +475,6 @@
 		};
 		22AABD4F2C875AE90086644F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E708E92C8D684C0009FE19 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -572,7 +531,6 @@
 		};
 		22AABD512C875AE90086644F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E708E92C8D684C0009FE19 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -603,7 +561,6 @@
 		};
 		22AABD522C875AE90086644F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E708E92C8D684C0009FE19 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

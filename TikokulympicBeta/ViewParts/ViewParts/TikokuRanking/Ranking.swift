@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ranking: View {
+struct Ranking: View {
     @State var timerHandler:Timer?
         
         var body: some View {
@@ -81,5 +81,6 @@ struct ranking: View {
     }
 
 #Preview {
-    ranking()
+    Ranking()
 }
+
