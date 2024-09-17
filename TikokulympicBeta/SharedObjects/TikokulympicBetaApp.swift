@@ -1,9 +1,3 @@
-//
-//  TikokulympicBetaApp.swift
-//  TikokulympicBeta
-//
-//  Created by 株丹優一郎 on 2024/09/03.
-//
 import GoogleSignIn
 import SwiftUI
 import Firebase

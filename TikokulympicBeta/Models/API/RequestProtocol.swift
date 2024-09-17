@@ -10,7 +10,7 @@ import Foundation
 
 protocol ResponseProtocol: Decodable {}
 
-protocol RequestProtocol : Encodable {
+protocol RequestProtocol: Encodable {
     associatedtype Response: ResponseProtocol
     var baseUrl: String { get }
     var path: String { get }

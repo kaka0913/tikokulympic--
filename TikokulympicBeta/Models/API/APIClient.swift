@@ -38,7 +38,7 @@ class APIClient {
         var urlRequest = URLRequest(url: url)
         urlRequest.method = method
         urlRequest.headers = headers ?? HTTPHeaders()
-        
+
         //TODO: バックグラウンドに移行
         let accessToken = try await supabaseClientManager.getAccessToken()
         urlRequest.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authrization")
