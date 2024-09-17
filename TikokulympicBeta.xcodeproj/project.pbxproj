@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22220BD32C970C7600DDB003 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22220BD22C970C7600DDB003 /* APIError.swift */; };
+		22220BD52C97103300DDB003 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22220BD42C97103300DDB003 /* APIClient.swift */; };
+		22242E052C994AB1001BEB14 /* TikokuRankingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22242E042C994AB1001BEB14 /* TikokuRankingService.swift */; };
+		22242E082C996F6A001BEB14 /* ArrivalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22242E072C996F6A001BEB14 /* ArrivalRequest.swift */; };
+		223484602C99ED62006BB113 /* SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234845F2C99ED62006BB113 /* SupabaseService.swift */; };
 		22AABD462C875AE80086644F /* TikokulympicBetaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD452C875AE80086644F /* TikokulympicBetaApp.swift */; };
 		22AABD482C875AE80086644F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD472C875AE80086644F /* ContentView.swift */; };
 		22AABD4A2C875AE90086644F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AABD492C875AE90086644F /* Assets.xcassets */; };
@@ -16,6 +21,8 @@
 		22AABD6E2C8C42490086644F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD6D2C8C42490086644F /* ProfileView.swift */; };
 		22AABD722C8C42730086644F /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD712C8C42730086644F /* EventListView.swift */; };
 		22AABD742C8C428B0086644F /* TikokuRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AABD732C8C428B0086644F /* TikokuRankingView.swift */; };
+		22BFE1D92C97322C00C60622 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 22BFE1D82C97322C00C60622 /* Alamofire */; };
+		22BFE1DB2C9750E400C60622 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFE1DA2C9750E400C60622 /* RequestProtocol.swift */; };
 		22E708E82C8D66EF0009FE19 /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E708E72C8D66EF0009FE19 /* APIKeyManager.swift */; };
 		22E708EA2C8D684C0009FE19 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 22E708E92C8D684C0009FE19 /* Config.xcconfig */; };
 		22E708F02C8D80030009FE19 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 22E708EF2C8D80030009FE19 /* Auth */; };
@@ -55,11 +62,16 @@
 		22E709382C8FF8910009FE19 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 22E709372C8FF8910009FE19 /* GoogleSignIn */; };
 		22E7093A2C8FF8910009FE19 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22E709392C8FF8910009FE19 /* GoogleSignInSwift */; };
 		22E7093F2C90054C0009FE19 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7093E2C90054C0009FE19 /* AuthViewModel.swift */; };
-		22E709412C904AF50009FE19 /* SupabaseClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E709402C904AF50009FE19 /* SupabaseClientManager.swift */; };
 		22E709432C904C220009FE19 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E709422C904C220009FE19 /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22220BD22C970C7600DDB003 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		22220BD42C97103300DDB003 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		22220BD62C972A7D00DDB003 /* TikokulympicBeta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TikokulympicBeta.entitlements; sourceTree = "<group>"; };
+		22242E042C994AB1001BEB14 /* TikokuRankingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikokuRankingService.swift; sourceTree = "<group>"; };
+		22242E072C996F6A001BEB14 /* ArrivalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalRequest.swift; sourceTree = "<group>"; };
+		2234845F2C99ED62006BB113 /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseService.swift; sourceTree = "<group>"; };
 		22AABD422C875AE80086644F /* TikokulympicBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikokulympicBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22AABD452C875AE80086644F /* TikokulympicBetaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikokulympicBetaApp.swift; sourceTree = "<group>"; };
 		22AABD472C875AE80086644F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,12 +82,12 @@
 		22AABD6D2C8C42490086644F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		22AABD712C8C42730086644F /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		22AABD732C8C428B0086644F /* TikokuRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikokuRankingView.swift; sourceTree = "<group>"; };
+		22BFE1DA2C9750E400C60622 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		22E708E72C8D66EF0009FE19 /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
 		22E708E92C8D684C0009FE19 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		22E708EB2C8D6ABA0009FE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22E709342C8F5AA80009FE19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "TikokulympicBeta/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		22E7093E2C90054C0009FE19 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		22E709402C904AF50009FE19 /* SupabaseClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClientManager.swift; sourceTree = "<group>"; };
 		22E709422C904C220009FE19 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +105,7 @@
 				22E708FA2C8D80950009FE19 /* Auth in Frameworks */,
 				22E708F02C8D80030009FE19 /* Auth in Frameworks */,
 				22E709332C8F55600009FE19 /* FirebaseStorage in Frameworks */,
+				22BFE1D92C97322C00C60622 /* Alamofire in Frameworks */,
 				22E709382C8FF8910009FE19 /* GoogleSignIn in Frameworks */,
 				22E709132C8F55600009FE19 /* FirebaseAnalytics in Frameworks */,
 				22E708FE2C8D80950009FE19 /* PostgREST in Frameworks */,
@@ -125,6 +138,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22220BD12C970C4900DDB003 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				22220BD22C970C7600DDB003 /* APIError.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		22AABD392C875AE80086644F = {
 			isa = PBXGroup;
 			children = (
@@ -144,11 +165,10 @@
 		22AABD442C875AE80086644F /* TikokulympicBeta */ = {
 			isa = PBXGroup;
 			children = (
+				22220BD12C970C4900DDB003 /* Entities */,
 				22E708E62C8D66C10009FE19 /* Services */,
 				22AABD542C8C31A60086644F /* Models */,
-				22AABD612C8C34990086644F /* ViewParts */,
 				22AABD5E2C8C33F10086644F /* Views */,
-				22AABD592C8C32E00086644F /* CommonViewParts */,
 				22AABD582C8C32A80086644F /* Resources */,
 				22AABD562C8C31ED0086644F /* SharedObjects */,
 				22AABD4B2C875AE90086644F /* Preview Content */,
@@ -156,6 +176,7 @@
 				22AABD642C8C38CA0086644F /* .swiftlint.yml */,
 				22E708EB2C8D6ABA0009FE19 /* Info.plist */,
 				22E708E92C8D684C0009FE19 /* Config.xcconfig */,
+				22220BD62C972A7D00DDB003 /* TikokulympicBeta.entitlements */,
 			);
 			path = TikokulympicBeta;
 			sourceTree = "<group>";
@@ -189,6 +210,10 @@
 		22AABD572C8C328D0086644F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				22E708E72C8D66EF0009FE19 /* APIKeyManager.swift */,
+				22220BD42C97103300DDB003 /* APIClient.swift */,
+				22BFE1DA2C9750E400C60622 /* RequestProtocol.swift */,
+				22242E072C996F6A001BEB14 /* ArrivalRequest.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -201,13 +226,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		22AABD592C8C32E00086644F /* CommonViewParts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonViewParts;
-			sourceTree = "<group>";
-		};
 		22AABD5E2C8C33F10086644F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,16 +235,6 @@
 				22AABD672C8C3F7C0086644F /* TikokuRanking */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		22AABD612C8C34990086644F /* ViewParts */ = {
-			isa = PBXGroup;
-			children = (
-				22AABD6A2C8C40010086644F /* Profile */,
-				22AABD6B2C8C400B0086644F /* EventList */,
-				22AABD6C2C8C40180086644F /* TikokuRanking */,
-			);
-			path = ViewParts;
 			sourceTree = "<group>";
 		};
 		22AABD672C8C3F7C0086644F /* TikokuRanking */ = {
@@ -253,32 +261,11 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		22AABD6A2C8C40010086644F /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		22AABD6B2C8C400B0086644F /* EventList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EventList;
-			sourceTree = "<group>";
-		};
-		22AABD6C2C8C40180086644F /* TikokuRanking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TikokuRanking;
-			sourceTree = "<group>";
-		};
 		22E708E62C8D66C10009FE19 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				22E708E72C8D66EF0009FE19 /* APIKeyManager.swift */,
-				22E709402C904AF50009FE19 /* SupabaseClientManager.swift */,
+				22242E042C994AB1001BEB14 /* TikokuRankingService.swift */,
+				2234845F2C99ED62006BB113 /* SupabaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -345,6 +332,7 @@
 				22E709322C8F55600009FE19 /* FirebaseStorage */,
 				22E709372C8FF8910009FE19 /* GoogleSignIn */,
 				22E709392C8FF8910009FE19 /* GoogleSignInSwift */,
+				22BFE1D82C97322C00C60622 /* Alamofire */,
 			);
 			productName = TikokulympicBeta;
 			productReference = 22AABD422C875AE80086644F /* TikokulympicBeta.app */;
@@ -378,6 +366,7 @@
 				22E708EE2C8D80030009FE19 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 				22E709112C8F54BA0009FE19 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				22E709362C8FF5140009FE19 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				22BFE1D72C97322C00C60622 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 22AABD432C875AE80086644F /* Products */;
 			projectDirPath = "";
@@ -431,14 +420,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E708E82C8D66EF0009FE19 /* APIKeyManager.swift in Sources */,
+				223484602C99ED62006BB113 /* SupabaseService.swift in Sources */,
 				22AABD482C875AE80086644F /* ContentView.swift in Sources */,
 				22AABD6E2C8C42490086644F /* ProfileView.swift in Sources */,
+				22BFE1DB2C9750E400C60622 /* RequestProtocol.swift in Sources */,
 				22AABD742C8C428B0086644F /* TikokuRankingView.swift in Sources */,
 				22E7093F2C90054C0009FE19 /* AuthViewModel.swift in Sources */,
 				22AABD462C875AE80086644F /* TikokulympicBetaApp.swift in Sources */,
+				22242E082C996F6A001BEB14 /* ArrivalRequest.swift in Sources */,
 				22E709432C904C220009FE19 /* AuthView.swift in Sources */,
-				22E709412C904AF50009FE19 /* SupabaseClientManager.swift in Sources */,
 				22AABD722C8C42730086644F /* EventListView.swift in Sources */,
+				22220BD32C970C7600DDB003 /* APIError.swift in Sources */,
+				22220BD52C97103300DDB003 /* APIClient.swift in Sources */,
+				22242E052C994AB1001BEB14 /* TikokuRankingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,10 +566,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TikokulympicBeta/TikokulympicBeta.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TikokulympicBeta/Preview Content\"";
-				DEVELOPMENT_TEAM = 67B8R6CZM3;
+				DEVELOPMENT_TEAM = 5285K4Z956;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TikokulympicBeta/Info.plist;
@@ -591,6 +587,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kabu.TikokulympicBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -603,10 +600,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TikokulympicBeta/TikokulympicBeta.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TikokulympicBeta/Preview Content\"";
-				DEVELOPMENT_TEAM = 67B8R6CZM3;
+				DEVELOPMENT_TEAM = 5285K4Z956;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TikokulympicBeta/Info.plist;
@@ -622,6 +621,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kabu.TikokulympicBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,6 +652,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		22BFE1D72C97322C00C60622 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 		22E708EE2C8D80030009FE19 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase/supabase-swift.git";
@@ -679,6 +687,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		22BFE1D82C97322C00C60622 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22BFE1D72C97322C00C60622 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		22E708EF2C8D80030009FE19 /* Auth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 22E708EE2C8D80030009FE19 /* XCRemoteSwiftPackageReference "supabase-swift" */;
