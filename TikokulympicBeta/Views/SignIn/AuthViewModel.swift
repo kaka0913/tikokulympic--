@@ -5,10 +5,10 @@
 //  Created by 株丹優一郎 on 2024/09/10.
 //
 
-import SwiftUI
 import GoogleSignIn
 import GoogleSignInSwift
 import Supabase
+import SwiftUI
 
 //AuthViewModelはAuthViewのみに対して使用したいため、ViewModelを作成
 class AuthViewModel: ObservableObject {
@@ -16,7 +16,8 @@ class AuthViewModel: ObservableObject {
 
     // Googleサインイン
     func signInWithGoogle() {
-        GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { signInResult, error in
+        GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) {
+            signInResult, error in
             guard let result = signInResult else {
                 if let error = error {
                     print("Error signing in: \(error.localizedDescription)")
@@ -64,7 +65,7 @@ class AuthViewModel: ObservableObject {
             print("SupabaseClient is not initialized.")
             return
         }
-        
+
         do {
             try await client.auth.signOut()
             await MainActor.run {
@@ -79,7 +80,8 @@ class AuthViewModel: ObservableObject {
     // ルートビューコントローラの取得
     private func getRootViewController() -> UIViewController {
         guard let screen = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let root = screen.windows.first?.rootViewController else {
+            let root = screen.windows.first?.rootViewController
+        else {
             return UIViewController()
         }
         return root

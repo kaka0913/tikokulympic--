@@ -19,7 +19,8 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
         // 通知の許可をリクエスト
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+            (granted, error) in
             if let error = error {
                 print("通知の許可リクエストでエラーが発生しました: \(error)")
                 return
@@ -39,7 +40,9 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
         return true
     }
 
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    func application(
+        _ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error
+    ) {
         print("Failed to register for remote notifications with error \(error)")
     }
 
@@ -55,7 +58,8 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(
         _: UNUserNotificationCenter,
         willPresent _: UNNotification,
-        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) ->
+            Void
     ) {
         completionHandler([.banner, .list, .sound])
     }
@@ -81,13 +85,13 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 @main
 struct TikokulympicBetaApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .onOpenURL { url in
                     GIDSignIn.sharedInstance.handle(url)
-                  }
+                }
         }
     }
 }

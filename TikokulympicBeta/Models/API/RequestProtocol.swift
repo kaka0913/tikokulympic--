@@ -5,8 +5,8 @@
 //  Created by 株丹優一郎 on 2024/09/16.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 protocol ResponseProtocol: Decodable {}
 
@@ -40,7 +40,7 @@ extension RequestProtocol {
             "Content-Type": "application/json"
         ]
     }
-    
+
     var decoder: JSONDecoder {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
