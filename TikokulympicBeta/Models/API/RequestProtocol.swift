@@ -36,7 +36,9 @@ extension RequestProtocol {
         return nil
     }
     var headers: Alamofire.HTTPHeaders? {
-        return nil
+        return [
+            "Content-Type": "application/json"
+        ]
     }
     
     var decoder: JSONDecoder {
