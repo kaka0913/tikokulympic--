@@ -12,7 +12,7 @@ class APIClient {
     static let shared = APIClient()
     private init() {}
     
-    func call<T: RequestProtocol>(request: T, completion: @escaping (Result<T.Response, APIError>) -> Void) {
+    func call<T: RequestProtocol>(request: T) async throws -> T.Response {
         let requestUrl = request.baseUrl + request.path
         
         let method = request.method
@@ -30,8 +30,7 @@ class APIClient {
         }
 
         guard let url = urlComponents?.url else {
-            completion(.failure(.invalidResponse))
-            return
+            throw APIError.invalidResponse
         }
 
         var urlRequest = URLRequest(url: url)
@@ -43,32 +42,33 @@ class APIClient {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: bodyParameters)
                 urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
             } catch {
-                completion(.failure(.requestFailed(error)))
-                return
+                throw APIError.requestFailed(error)
             }
         }
         
-        AF.request(urlRequest)
-        .validate()
-        .responseDecodable(of: T.Response.self, decoder: request.decoder) { response in
-            let statusCode = response.response?.statusCode ?? -1
-            switch response.result {
-            case .success(let result):
-                completion(.success(result))
-            case .failure(let error):
-                let data = response.data
-                if (200..<300).contains(statusCode) {
-                    // ステータスコードは成功だが、デコードに失敗した場合
-                    completion(.failure(.decodingError(error)))
-                } else if (400..<500).contains(statusCode) {
-                    // クライアントエラー
-                    completion(.failure(.clientError(statusCode: statusCode, data: data)))
-                } else if (500..<600).contains(statusCode) {
-                    // サーバーエラー
-                    completion(.failure(.serverError(statusCode: statusCode, data: data)))
-                } else {
-                    // その他のエラー
-                    completion(.failure(.unknownError(statusCode: statusCode, data: data, error: error)))
+        return try await withCheckedThrowingContinuation { continuation in
+            AF.request(urlRequest)
+            .validate()
+            .responseDecodable(of: T.Response.self, decoder: request.decoder) { response in
+                let statusCode = response.response?.statusCode ?? -1
+                switch response.result {
+                case .success(let result):
+                    continuation.resume(returning: result)
+                case .failure(let error):
+                    let data = response.data
+                    if (200..<300).contains(statusCode) {
+                        // ステータスコードは成功だが、デコードに失敗した場合
+                        continuation.resume(throwing: APIError.decodingError(error))
+                    } else if (400..<500).contains(statusCode) {
+                        // クライアントエラー
+                        continuation.resume(throwing: APIError.clientError(statusCode: statusCode, data: data))
+                    } else if (500..<600).contains(statusCode) {
+                        // サーバーエラー
+                        continuation.resume(throwing: APIError.serverError(statusCode: statusCode, data: data))
+                    } else {
+                        // その他のエラー
+                        continuation.resume(throwing: APIError.unknownError(statusCode: statusCode, data: data, error: error))
+                    }
                 }
             }
         }
