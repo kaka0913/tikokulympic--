@@ -10,6 +10,8 @@ import Foundation
 
 class APIClient {
     static let shared = APIClient()
+    //TODO: バックグラウンドに移行
+    let supabaseClientManager = SupabaseClientManager.shared
     private init() {}
 
     func call<T: RequestProtocol>(request: T) async throws -> T.Response {
@@ -19,7 +21,7 @@ class APIClient {
         let headers = request.headers
 
         // ベースURLとパスを結合
-        var urlComponents = URLComponents(string: request.baseUrl + request.path)
+        var urlComponents = URLComponents(string: requestUrl)
 
         // クエリパラメータを追加
         if let queryParameters = request.query {
@@ -36,6 +38,10 @@ class APIClient {
         var urlRequest = URLRequest(url: url)
         urlRequest.method = method
         urlRequest.headers = headers ?? HTTPHeaders()
+        
+        //TODO: バックグラウンドに移行
+        let accessToken = try await supabaseClientManager.getAccessToken()
+        urlRequest.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authrization")
 
         if let bodyParameters = request.parameters {
             do {

@@ -18,7 +18,6 @@ class TikokuRankingService {
             isArrival: isArrival,
             arrivalTime: arrivalTime
         )
-
         do {
             _ = try await apiClient.call(request: request)
         } catch {
